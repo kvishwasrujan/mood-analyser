@@ -20,5 +20,11 @@ class abilityToAnalyse {
 		String expected ="SAD";
 		Assert.assertEquals(expected, mood);
 	}
+	@Test
+	public void RespondwhenNull() {
+		MoodAnalyser moodobj= new MoodAnalyser("");
+		String mood = moodobj.analyseMood() ;
+		String expected ="HAPPY";
+		Assert.assertEquals(expected, mood);
 
-}
+}}
